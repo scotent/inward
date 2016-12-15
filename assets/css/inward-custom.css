@@ -1,0 +1,40 @@
+/* enable absolute positioning */
+.inner-addon { 
+    position: relative; 
+}
+
+/* style icon */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+#filter-menu {
+  margin: 0;
+  padding: 0 !important;
+  list-style: none;
+}
+
+ul.sub-menu {
+  list-style: none;
+  padding-left: 0 !important;
+  margin: 0;
+}
+
+.inline {
+  display: inline;
+}
+
+hr {
+  margin: 10px 0;
+}
