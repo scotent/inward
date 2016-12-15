@@ -38,3 +38,16 @@ ul.sub-menu {
 hr {
   margin: 10px 0;
 }
+
+.margin-right {
+  margin-right: 0.5em;
+}
+
+.margin-left {
+  margin-left: 0.5em;
+}
+
+.collection-block span.glyphicon{
+  font-size: 2.5em;
+  color: grey;
+}
