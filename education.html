@@ -17,13 +17,6 @@
   </head>
   <body>
     <header>
-      <div id="usernav" class="clearfix">
-          <ul class="nav nav-pills pull-right">
-            <li role="presentation"><a href="#">My recent searches</a></li>
-            <li role="presentation"><a href="my-collections.html">My stuff</a></li>
-          </ul>
-      </div>
-    
       <nav class="navbar navbar-default">
         <div class="container">
           <div class="navbar-header">
@@ -33,10 +26,9 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Scottish Enterprise</a>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav pull-left">
               <li><a href="index.html">Home</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Talent<span class="caret"></span></a>
@@ -65,9 +57,14 @@
                 </ul>
               </li>
               <li><a href="#contact">Sectors</a></li>
-              <li><a href="#contact">Conectivity</a></li>
+              <li><a href="#contact">Connectivity</a></li>
               <li><a href="#contact">Incentives</a></li>
               <li><a href="#contact">Property</a></li>
+            </ul>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="upload.html">Upload content</a></li>
+              <li role="presentation"><a href="#">My recent searches</a></li>
+              <li role="presentation"><a href="my-collections.html">My stuff</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -91,50 +88,50 @@
         
           <div class="menu-list">
     
-              <ul id="filter-menu" class="list-group menu-content collapse in">
-                  
-                  <li class="collapsed list-group-item" data-target="#category-filters" data-toggle="collapse">
-                    <a href="#"> <strong>Category </strong>  <span class="caret"></span></a>
+              <ul id="filter-menu" class="list-group menu-content">
 
-                    <ul id="category-filters" class="sub-menu collapse spacialCheckbox-ul">
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Cat 1</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Cat 2</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Cat 3</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Cat 4</label></li>
+                  <li class="list-group-item" data-target="#category-filters">
+                    <a href="#"> <strong>Sector </strong>  <span class="caret"></span></a>
+
+                    <ul id="category-filters" class="sub-menu spacialCheckbox-ul">
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Oil & Gas</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Aerospace</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Financial Services</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Technology</label></li>
                     </ul>
                   </li> <!--/.end category list group -->
 
-                  <li class="collapsed list-group-item" data-target="#location-filters" data-toggle="collapse">
+                  
+                  <li class="collapsed list-group-item" data-target="#location-filters">
                     <a href="#"> <strong>Location </strong>  <span class="caret"></span></a>
 
-                    <ul id="location-filters" class="sub-menu collapse spacialCheckbox-ul">
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Location 1</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Location 2</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Location 3</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Location 4</label></li>
+                    <ul id="location-filters" class="sub-menu spacialCheckbox-ul">
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>West & Central</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>North East</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Highlands & Islands</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Lothian & Borders</label></li>
                     </ul>
                   </li> <!--/.end location list group -->
 
-                  <li class="collapsed list-group-item" data-target="#type-filters" data-toggle="collapse">
+                  <li class="collapsed list-group-item" data-target="#type-filters">
                     <a href="#"> <strong>Type </strong>  <span class="caret"></span></a>
 
-                    <ul id="type-filters" class="sub-menu collapse spacialCheckbox-ul">
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Type 1</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Type 2</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Type 3</label></li>
-                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Type 4</label></li>
+                    <ul id="type-filters" class="sub-menu spacialCheckbox-ul">
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Statistics</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>CSV</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Infographic</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Report</label></li>
                     </ul>
                   </li> <!--/.end type list group -->
 
-                  <li class="collapsed list-group-item" data-target="#freshness-filters" data-toggle="collapse">
+                  <li class="collapsed list-group-item" data-target="#freshness-filters">
                     <a href="#"> <strong>Freshness </strong>  <span class="caret"></span></a>
 
-                    <div id="freshness-filters" class="sub-menu collapse spacialCheckbox-ul">
-                       <input type="text" />
+                    <div id="freshness-filters" class="sub-menu spacialCheckbox-ul">
+                       <input type="date" placeholder="MM/YYYY" style="width: 140px"/>
                     </div>
                   </li> <!--/.end type list group -->
               </ul>
-          
             </div> <!-- left menu end -->
             
         </div><!--/.end filter search columns -->
