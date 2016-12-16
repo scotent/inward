@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Search results: Education</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/inward-custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-tagsinput.css">
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-left">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Talent<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="graduate-search.html">Graduates</a></li>
+                  <li><a href="#">Recruiters</a></li>
+                  <li><a href="#">Retention</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Costs<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="salary-search.html">Salaries</a></li>
+                  <li><a href="#">Property</a></li>
+                  <li><a href="#">Cost of living</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Aberdeen</a></li>
+                  <li><a href="#">Dundee</a></li>
+                  <li><a href="#">Edinburgh</a></li>
+                  <li><a href="#">Glasgow</a></li>
+                  <li><a href="#">Inverness</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Sectors</a></li>
+              <li><a href="#contact">Conectivity</a></li>
+              <li><a href="#contact">Incentives</a></li>
+              <li><a href="#contact">Property</a></li>
+            </ul>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="#">My recent searches</a></li>
+              <li role="presentation"><a href="my-collections.html">My stuff</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </header><!--/.end header -->
+    
+    <div id="content" class="container">
+      
+      <div class="row">
+        
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h1 class="panel-title">Upload some content</h1>
+          </div>
+          <div class="panel-body clearfix">
+            <form class="col-sm-6">
+              <div class="form-group clearfix">
+                <label for="exampleInputEmail1">You have added a Spreadseet <a href="csv-1.html">Change this</a></label>
+
+              </div>
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Give the content a title</label>
+                  <p>Make sure you use a title that is relevant to the content</p>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Title">
+              </div>
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Give the content a description</label>
+                  <p>What is the content about and provide any suggested uses</p>
+                  <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Do you know the source?</label>
+                  <p>This is important for confidence in the data. Data with sources can be checked for validity.</p>
+                  <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Source Name eg. Scottish Government">
+                  <input type="url" class="form-control" id="exampleInputPassword1" placeholder="eg. www.gov.scot">
+              </div>
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">What categories should this data be saved under?</label>
+                  <p>Putting the data under the correct category will help other people find it and reuse it quickly and easily</p>
+                  <select class="form-control" style="display: inline; width: auto;">
+                    <option value="saab">Select a category...</option>
+                    <option value="saab">Talent</option>
+                    <option value="saab">Locations</option>
+                    <option value="saab">Costs</option>
+                    <option value="saab">Sectors</option>
+                    <option value="saab">Connectivity</option>
+                    <option value="saab">Incentives</option>
+                    <option value="saab">property</option>
+                  </select>
+
+                 <select class="form-control" style="display: inline; width: auto;">
+                    <option value="saab">Select a sub-category...</option>
+                    <option value="saab">Salaries</option>
+                    <option value="saab">Property</option>
+                    <option value="saab">Cost of Living</option>
+                  </select>
+                  
+                  <a href="#" class="btn btn-primary">Add +</a>
+
+              </div>
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">What tags are relevant to this content?</label>
+                  <p>Making sure the tags are relevant and correct will help other people find and use this content</p>
+                  <input type="text" class="form-control" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" 
+              </div>
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">What are the usage rights surrounding this content?</label>
+                  <p>Putting the correct usage rights will help people know the resrictions around distribution. </p>
+                  <select class="form-control" style="display: inline; width: auto;">
+                    <option value="saab">Select a category...</option>
+                    <option value="saab">Talent</option>
+                    <option value="saab">Locations</option>
+                    <option value="saab">Costs</option>
+                    <option value="saab">Sectors</option>
+                    <option value="saab">Connectivity</option>
+                    <option value="saab">Incentives</option>
+                    <option value="saab">property</option>
+                  </select>
+              </div>
+
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Does this content have an expiry or date it should be checked?</label>
+                  <p>By giving content a use by date it helps us to make sure that everything in the Information Bank is current and up-to-date.</p>
+                  <input type="date" value="DD/MM/YYYY"  class="form-control"/>
+              </div>
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Who is the owner of this content</label>
+                  <p>If it is not you, please select the nominated owner for this content and we will alert them that it has been saved to them</p>
+                  <input type="text" value="Joanne Smith" class="form-control" />
+              </div>
+
+              <div class="form-group submit clearfix">
+                  <a href="csv-publish.html" class="btn btn-primary pull-right">Publish</a>
+              </div>
+              
+
+
+            </form>
+            </div>
+
+            <div class="well col-sm-6">
+              <p><strong>Preview:</strong></p>
+              <table id="" class="table" width="100%">
+  
+                <tr>
+                  <th>Job Title</td>
+                  <th>Salary</th>
+                </tr>
+    
+                <tr>
+                  <td>Senior Software Engineer (Platform)</td>
+                  <td>£65-£85k</td>
+                </tr>
+    
+                <tr>
+                  <td>Software Engineers</td>
+                  <td>£65-£85k</td>
+                </tr>
+    
+                <tr>
+                  <td>DevOps Engineer</td>
+                  <td>£65-£85k</td>
+                </tr>
+    
+                <tr>
+                  <td>Software Engineer (SDK-Android)</td>
+                  <td>£65-£85k</td>
+                </tr>
+    
+                <tr>
+                  <td>Big Data Engineer</td>
+                  <td>£65-£85k</td>
+                </tr>
+  
+              </table>      
+
+          </div>
+        </div>
+
+        
+      </div> 
+
+    </div>
+              
+    
+  </body>
+</html>

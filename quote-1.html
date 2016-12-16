@@ -7,8 +7,10 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-tagsinput.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/inward-custom.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-tagsinput.css">
 
     <meta name="viewport" content="width=device-width">
     <!--[if lt IE 9]>
@@ -79,23 +81,43 @@
           <div class="panel-heading">
             <h1 class="panel-title">Upload some content</h1>
           </div>
-          <div class="panel-body">
-            <form>
+          <div class="panel-body clearfix">
+            <form class="">
               <div class="form-group clearfix">
                 <label for="exampleInputEmail1">What type of content are you posting?</label>
                 <div class="clearfix">
-                <a type="button" class="btn btn-primary ">Statistics</a>
-                <a href="csv-1.html" type="button" class="btn btn-primary">Spreadseet</a>
-                  <a type="button" class="btn btn-primary">Report</a>
-                  <a type="button" class="btn btn-primary">Case Study</a>
-                  <a type="button" class="btn btn-primary">Text Snippet</a>
-                  <a type="button" class="btn btn-primary">Lists</a>
-                  <a type="button" class="btn btn-primary">Quote</a>
-                  <a type="button" class="btn btn-primary">Images</a>
-                  </div>
+                  <a type="button" class="btn btn ">Statistics</a>
+                  <a href="csv-1.html" type="button" class="btn btn-primary">Spreadseet</a>
+                  <a type="button" class="btn btn">Report</a>
+                  <a type="button" class="btn btn">Case Study</a>
+                  <a type="button" class="btn btn">Text Snippet</a>
+                  <a type="button" class="btn btn">Lists</a>
+                  <a type="button" class="btn btn">Quote</a>
+                  <a type="button" class="btn btn">Images</a>
+                  <a type="button" class="btn btn">Other..</a>
+                </div>
               </div>
-            </form>
+              
+              <div class="col-sm-6">
 
+              <div class="form-group clearfix">
+                  <label for="exampleInputPassword1">Select your csv or excel file</label>
+                  <a href="#" class="btn btn-default">Browse</a>
+              </div>
+
+              <div class="form-group clearfix">
+                  <label for="exampleInputPassword1">or Copy & Paste your CSV below</label>
+                  <textarea class="form-control" rows="3"></textarea>
+              </div>
+              
+
+              <div class="form-group submit clearfix" style="clear: both;">
+                  <a href="csv-2.html" class="btn btn-primary pull-right">Next</a>
+              </div>
+              
+              </div>
+              
+            </form>
           </div>
         </div>
 

@@ -1,0 +1,378 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Search results: Education</title>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/inward-custom.css">
+
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav pull-left">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Talent<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="graduate-search.html">Graduates</a></li>
+                  <li><a href="#">Recruiters</a></li>
+                  <li><a href="#">Retention</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Costs<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="salary-search.html">Salaries</a></li>
+                  <li><a href="#">Property</a></li>
+                  <li><a href="#">Cost of living</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cities <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Aberdeen</a></li>
+                  <li><a href="#">Dundee</a></li>
+                  <li><a href="#">Edinburgh</a></li>
+                  <li><a href="#">Glasgow</a></li>
+                  <li><a href="#">Inverness</a></li>
+                </ul>
+              </li>
+              <li><a href="#contact">Sectors</a></li>
+              <li><a href="#contact">Connectivity</a></li>
+              <li><a href="#contact">Incentives</a></li>
+              <li><a href="#contact">Property</a></li>
+            </ul>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="upload.html">Upload content</a></li>
+              <li role="presentation"><a href="#">My recent searches</a></li>
+              <li role="presentation"><a href="my-collections.html">My stuff</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </nav>
+    </header><!--/.end header -->
+    
+    <div id="content" class="container">
+      
+      <div class="row">
+        
+        <div class="col-sm-2">
+
+         <h3 style="margin: 0;">Filter results</h3>
+
+          <div class="inner-addon right-addon">
+              <i class="glyphicon glyphicon-search"></i>
+              <input type="text" class="form-control" placeholder="narrow results" />
+          </div>      
+          
+          <i aria-expanded="true" data-target="#menu-content" data-toggle="collapse" class="fa fa-bars fa-2x toggle-btn"></i>
+        
+          <div class="menu-list">
+    
+              <ul id="filter-menu" class="list-group menu-content">
+
+                  <li class="list-group-item" data-target="#category-filters">
+                    <a href="#"> <strong>Sector </strong>  <span class="caret"></span></a>
+
+                    <ul id="category-filters" class="sub-menu spacialCheckbox-ul">
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Oil & Gas</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Aerospace</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Financial Services</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Technology</label></li>
+                    </ul>
+                  </li> <!--/.end category list group -->
+
+                  
+                  <li class="collapsed list-group-item" data-target="#location-filters">
+                    <a href="#"> <strong>Location </strong>  <span class="caret"></span></a>
+
+                    <ul id="location-filters" class="sub-menu spacialCheckbox-ul">
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>West & Central</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>North East</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Highlands & Islands</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Lothian & Borders</label></li>
+                    </ul>
+                  </li> <!--/.end location list group -->
+
+                  <li class="collapsed list-group-item" data-target="#type-filters">
+                    <a href="#"> <strong>Type </strong>  <span class="caret"></span></a>
+
+                    <ul id="type-filters" class="sub-menu spacialCheckbox-ul">
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Case Study</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Statistics</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>CSV</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Infographic</label></li>
+                       <li class="checkbox margin-right"><label><input type="checkbox" id="category" class="d" name="category" value="0 - 1 Lack"><i></i>Report</label></li>
+                    </ul>
+                  </li> <!--/.end type list group -->
+
+                  <li class="collapsed list-group-item" data-target="#freshness-filters">
+                    <a href="#"> <strong>Freshness </strong>  <span class="caret"></span></a>
+
+                    <div id="freshness-filters" class="sub-menu spacialCheckbox-ul">
+                       <input type="date" placeholder="MM/YYYY" style="width: 140px"/>
+                    </div>
+                  </li> <!--/.end type list group -->
+              </ul>
+            </div> <!-- left menu end -->
+            
+        </div><!--/.end filter search columns -->
+  
+        <div class="col-sm-7">
+          
+          <div id="actions" class="clearfix">
+            
+            Results: 3 of 241
+            
+
+          <div class="dropdown pull-right" style="margin-bottom: 1em;">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Sort
+              <span class="caret"></span>
+            </button>
+            
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li><a href="#">Rating</a></li>
+              <li><a href="#">Freshness</a></li>
+              <li><a href="#">Published</a></li>
+              <li><a href="#">A - Z</a></li>
+              <li><a href="#">Z - A</a></li>
+            </ul>
+          </div>
+
+            
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <h3 class="panel-title pull-left"><a href="">Oil & Gas Salary Review 2016-2017</a></h3>
+              <a class="btn btn-primary btn-xs pull-right margin-left" href="#" role="button">Add to</a>
+              <a class="btn btn-primary btn-xs pull-right" href="#" role="button">View</a>
+            </div>
+            <div class="panel-body">
+              <div class="content--summary clearfix">
+                <img src="http://placehold.it/50x50" class="pull-left margin-right" >
+                <strong>Summary:</strong> A report on the effect of the oil crash of 2014 on average salaries in Scottish oil and gas sector 2016-2017.
+              </div> <!--/.end content summary -->
+              <hr />
+               <div class="content--metadata">
+                   <div class="content-rating inline margin-right">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #999!important"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #999!important"></span>
+                   </div>
+                   <div class="content-checked inline">
+                     <span class="margin-right">Last checked by <a href="#">John Jones</a> on 16/12/2016</span> /
+                     <span class="margin-right">Added by <a href="#">Mike McDonald</a> on 10/07/2016</span>
+                   </div>
+                 </div>
+                 <hr>
+                  <ul class="list-inline" style="display: inline;">
+                    <li>Tags:</li>
+                    <li><a href="#">Salaries</a></li>
+                    <li><a href="#">Report</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                    <li><a href="#">Aberdeen</a></li>
+                    <li><a href="#">Energy</a></li>
+                  </ul>
+              </div><!--/.end content metadata -->
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <h3 class="panel-title pull-left"><a href="software-developer-salary.html">Software Developer Salaries</a></h3>
+              <a class="btn btn-primary btn-xs pull-right margin-left" href="#" role="button">Add to</a>
+              <a class="btn btn-primary btn-xs pull-right" href="software-developer-salary.html" role="button">View</a>
+            </div>
+            <div class="panel-body">
+              <div class="content--summary clearfix">
+                <img src="http://placehold.it/50x50" class="pull-left margin-right" >
+                <strong>Summary:</strong>Spreadsheet of average software developer salaries in Scotland 2016. Includes mobile developers for all cities.</div> <!--/.end content summary -->
+              <hr />
+               <div class="content--metadata">
+                   <div class="content-rating inline margin-right">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                   </div>
+                   <div class="content-checked inline">
+                     <span class="margin-right">Last checked by <a href="#">Kate Kitchen</a> on 16/12/2016</span> /
+                     <span class="margin-right">Added by <a href="#">Mary Miller</a> on 10/07/2016</span>
+                   </div>
+                 </div>
+                 <hr>
+                  <ul class="list-inline" style="display: inline;">
+                    <li>Tags:</li>
+                    <li><a href="#">Salaries</a></li>
+                    <li><a href="#">Software Development</a></li>
+                    <li><a href="#">Technology</a></li>
+                    <li><a href="#">Employment</a></li>
+                  </ul>
+              </div><!--/.end content metadata -->
+          </div>
+
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <h3 class="panel-title pull-left"><a href="">Scottish Infrastructure Infographic</a></h3>
+              <a class="btn btn-primary btn-xs pull-right margin-left" href="#" role="button">Add to</a>
+              <a class="btn btn-primary btn-xs pull-right" href="#" role="button">View</a>
+            </div>
+            <div class="panel-body">
+              <div class="content--summary clearfix">
+                <img src="http://placehold.it/50x50" class="pull-left margin-right" >
+                <strong>Summary:</strong> A report on the effect of the oil crash of 2014 on average salaries in Scottish oil and gas sector 2016-2017.
+              </div> <!--/.end content summary -->
+              <hr />
+               <div class="content--metadata">
+                   <div class="content-rating inline margin-right">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #999!important"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #999!important"></span>
+                   </div>
+                   <div class="content-checked inline">
+                     <span class="margin-right">Last checked by <a href="#">John Jones</a> on 16/12/2016</span> /
+                     <span class="margin-right">Added by <a href="#">Mike McDonald</a> on 10/07/2016</span>
+                   </div>
+                 </div>
+                 <hr>
+                  <ul class="list-inline" style="display: inline;">
+                    <li>Tags:</li>
+                    <li><a href="#">Salaries</a></li>
+                    <li><a href="#">Report</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                    <li><a href="#">Aberdeen</a></li>
+                    <li><a href="#">Energy</a></li>
+                  </ul>
+              </div><!--/.end content metadata -->
+          </div>
+
+
+          <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+              <h3 class="panel-title pull-left"><a href="">Oil & Gas Salary Review 2016-2017</a></h3>
+              <a class="btn btn-primary btn-xs pull-right margin-left" href="#" role="button">Add to</a>
+              <a class="btn btn-primary btn-xs pull-right" href="#" role="button">View</a>
+            </div>
+            <div class="panel-body">
+              <div class="content--summary clearfix">
+                <img src="http://placehold.it/50x50" class="pull-left margin-right" >
+                <strong>Summary:</strong> A report on the effect of the oil crash of 2014 on average salaries in Scottish oil and gas sector 2016-2017.
+              </div> <!--/.end content summary -->
+              <hr />
+               <div class="content--metadata">
+                   <div class="content-rating inline margin-right">
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #999!important"></span>
+                      <span class="glyphicon glyphicon-star" aria-hidden="true" style="color: #999!important"></span>
+                   </div>
+                   <div class="content-checked inline">
+                     <span class="margin-right">Last checked by <a href="#">John Jones</a> on 16/12/2016</span> /
+                     <span class="margin-right">Added by <a href="#">Mike McDonald</a> on 10/07/2016</span>
+                   </div>
+                 </div>
+                 <hr>
+                  <ul class="list-inline" style="display: inline;">
+                    <li>Tags:</li>
+                    <li><a href="#">Salaries</a></li>
+                    <li><a href="#">Report</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                    <li><a href="#">Aberdeen</a></li>
+                    <li><a href="#">Energy</a></li>
+                  </ul>
+              </div><!--/.end content metadata -->
+          </div>
+
+
+
+
+          <nav aria-label="Page navigation">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li>
+                <a href="#" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+
+        </div>
+
+        <div class="col-sm-3">
+          
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              Not what you're looking for?
+            </div>
+            <div class="panel-body">
+              <div class="media">
+                  <p>Try asking an industry expert</p>
+                <div class="media-left">
+                  <a href="#">
+                    <img src="http://placehold.it/40x40" class="pull-left margin-right">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">Steve Jones</h4>
+                  <p>Technology Sector Specialist</p>
+                  <a class="btn btn-primary btn-sm" href="#" role="button">Contact Steve</a>
+                </div>
+              </div>          
+            </div>
+          </div>
+          
+          <div class="panel panel-default text-center">
+            <div class="panel-body">
+              <h5 class="media-heading">Share your request with the Scottish Enterprise Network</h5>
+              <a class="btn btn-primary btn-sm" href="#" role="button">Ask the network</a>
+            </div>
+          </div>
+
+
+        </div>
+        
+      </div> 
+
+    </div>
+              
+    
+  </body>
+</html>
