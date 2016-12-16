@@ -83,34 +83,27 @@
           <div class="panel-body clearfix">
             <form class="col-sm-6">
               <div class="form-group clearfix">
-                <label for="exampleInputEmail1">What type of content are you posting?</label>
-                <div class="clearfix">
-                  <a type="button" class="btn btn ">Statistics</a>
-                  <a href="csv-1.html" type="button" class="btn btn-primary">CSV</a>
-                  <a type="button" class="btn btn">Report</a>
-                  <a type="button" class="btn btn">Case Study</a>
-                  <a type="button" class="btn btn">Snippet</a>
-                  <a type="button" class="btn btn">Images</a>
-                </div>
+                <label for="exampleInputEmail1">You are adding a CSV <a href="csv-1.html">Change this</a></label>
+
               </div>
-              <div class="form-group clearfix">
+              <div class="form-group clearfix" style="margin: 2em 0;">
                   <label for="exampleInputPassword1">Give the content a title</label>
                   <p>Make sure you use a title that is relevant to the content</p>
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Title">
               </div>
-              <div class="form-group clearfix">
+              <div class="form-group clearfix" style="margin: 2em 0;">
                   <label for="exampleInputPassword1">Give the content a description</label>
                   <p>What is the content about and provide any suggested uses</p>
                   <textarea class="form-control" rows="3"></textarea>
               </div>
-              <div class="form-group clearfix">
+              <div class="form-group clearfix" style="margin: 2em 0;">
                   <label for="exampleInputPassword1">Do you know the source?</label>
                   <p>This is important for confidence in the data. Data with sources can be checked for validity.</p>
                   <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Source Name eg. Scottish Government">
                   <input type="url" class="form-control" id="exampleInputPassword1" placeholder="eg. www.gov.scot">
               </div>
 
-              <div class="form-group clearfix">
+              <div class="form-group clearfix" style="margin: 2em 0;">
                   <label for="exampleInputPassword1">What categories should this data be saved under?</label>
                   <p>Putting the data under the correct category will help other people find it and reuse it quickly and easily</p>
                   <select class="form-control" style="display: inline; width: auto;">
@@ -134,15 +127,51 @@
                   <a href="#" class="btn btn-primary">Add +</a>
 
               </div>
-              <div class="form-group clearfix">
+              <div class="form-group clearfix" style="margin: 2em 0;">
                   <label for="exampleInputPassword1">What tags are relevant to this content?</label>
                   <p>Making sure the tags are relevant and correct will help other people find and use this content</p>
                   <input type="text" class="form-control" value="Amsterdam,Washington,Sydney,Beijing,Cairo" data-role="tagsinput" 
               </div>
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">What are the usage rights surrounding this content?</label>
+                  <p>Putting the correct usage rights will help people know the resrictions around distribution. </p>
+                  <select class="form-control" style="display: inline; width: auto;">
+                    <option value="saab">Select a category...</option>
+                    <option value="saab">Talent</option>
+                    <option value="saab">Locations</option>
+                    <option value="saab">Costs</option>
+                    <option value="saab">Sectors</option>
+                    <option value="saab">Connectivity</option>
+                    <option value="saab">Incentives</option>
+                    <option value="saab">property</option>
+                  </select>
+              </div>
+
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Does this content have an expiry or date it should be checked?</label>
+                  <p>By giving content a use by date it helps us to make sure that everything in the Information Bank is current and up-to-date.</p>
+                  <input type="date" value="DD/MM/YYYY"  class="form-control"/>
+              </div>
+
+              <div class="form-group clearfix" style="margin: 2em 0;">
+                  <label for="exampleInputPassword1">Who is the owner of this content</label>
+                  <p>If it is not you, please select the nominated owner for this content and we will alert them that it has been saved to them</p>
+                  <input type="text" value="Joanne Smith" class="form-control" />
+              </div>
+
+              <div class="form-group submit clearfix">
+                  <a href="csv-3.html" class="btn btn-primary pull-right">Publish</a>
+              </div>
+              
+
+
             </form>
             </div>
 
             <div class="well col-sm-6">
+              <p><strong>Preview:</strong></p>
               <table id="" class="table" width="100%">
   
                 <tr>
